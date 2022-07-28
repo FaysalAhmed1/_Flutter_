@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testportion_1/exercices/button_icon_sizedbox.dart';
 import 'package:testportion_1/exercices/expanded.dart';
 import 'package:testportion_1/exercices/row_col.dart';
 import 'package:testportion_1/exercices/single_child_scroll_view.dart';
@@ -67,6 +68,15 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ExpandedExcercise()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Button Icons SizedBox'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ButtonIconSizedbox()),
                 );
               },
             ),
