@@ -10,46 +10,44 @@ class SingleChildScroll extends StatefulWidget {
 class _SingleChildScrollState extends State<SingleChildScroll> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Single Child Scroll View'),
-        ),
-        body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(children: [
-            Container(
-              width: 150.0,
-              color: Colors.red,
-              margin: const EdgeInsets.all(5.0),
-            ),
-            Container(
-              width: 150.0,
-              color: Colors.blue,
-              margin: const EdgeInsets.all(5.0),
-            ),
-            Container(
-              width: 150.0,
-              color: Colors.red,
-              margin: const EdgeInsets.all(5.0),
-            ),
-            Container(
-              width: 150.0,
-              color: Colors.blue,
-              margin: const EdgeInsets.all(5.0),
-            ),
-            Container(
-              width: 150.0,
-              color: Colors.red,
-              margin: const EdgeInsets.all(5.0),
-            ),
-            Container(
-              width: 150.0,
-              color: Colors.blue,
-              margin: const EdgeInsets.all(5.0),
-            ),
-          ]),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Single Child Scroll View'),
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(children: [
+          Container(
+            width: 150.0,
+            color: Colors.red,
+            margin: const EdgeInsets.all(5.0),
+          ),
+          Container(
+            width: 150.0,
+            color: Colors.blue,
+            margin: const EdgeInsets.all(5.0),
+          ),
+          Container(
+            width: 150.0,
+            color: Colors.red,
+            margin: const EdgeInsets.all(5.0),
+          ),
+          Container(
+            width: 150.0,
+            color: Colors.blue,
+            margin: const EdgeInsets.all(5.0),
+          ),
+          Container(
+            width: 150.0,
+            color: Colors.red,
+            margin: const EdgeInsets.all(5.0),
+          ),
+          Container(
+            width: 150.0,
+            color: Colors.blue,
+            margin: const EdgeInsets.all(5.0),
+          ),
+        ]),
       ),
     );
   }
